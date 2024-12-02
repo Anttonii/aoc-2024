@@ -1,4 +1,6 @@
 final.txt
 
+.vscode
+*.exe
+
 src/day-*/*.txt
-src/day-*/*.exe
