@@ -26,6 +26,23 @@ namespace utils
         return ss.str();
     }
 
+    std::vector<std::string> readInputLines(const std::string &fname)
+    {
+        std::ifstream input_file(fname);
+        std::vector<std::string> output;
+
+        // Read the file line by line into a vector
+        std::string line;
+
+        while (std::getline(input_file, line))
+            output.push_back(line);
+
+        // Close the file
+        input_file.close();
+
+        return output;
+    }
+
     std::vector<std::string> splitString(std::string &toSplit, const char del)
     {
         std::string s;
