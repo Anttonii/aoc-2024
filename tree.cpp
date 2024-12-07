@@ -4,7 +4,7 @@
 
 int main()
 {
-    int len = 6;
+    int len = 7;
     for (int i = 0; i < len; i++)
     {
         std::stringstream ss;
