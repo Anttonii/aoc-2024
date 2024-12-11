@@ -99,4 +99,32 @@ namespace utils
         return result;
     }
 
+    template <typename T>
+    void remove_index(std::vector<T> &vector, const std::vector<int> &to_remove)
+    {
+        auto vector_base = vector.begin();
+        size_t down_by = 0;
+
+        for (auto iter = to_remove.cbegin();
+             iter < to_remove.cend();
+             iter++, down_by++)
+        {
+            size_t next = (iter + 1 == to_remove.cend()
+                               ? vector.size()
+                               : *(iter + 1));
+
+            std::move(vector_base + *iter + 1,
+                      vector_base + next,
+                      vector_base + *iter - down_by);
+        }
+        vector.resize(vector.size() - to_remove.size());
+    }
+
+    template <class T>
+    inline std::string to_string(const T &t)
+    {
+        std::stringstream ss;
+        ss << t;
+        return ss.str();
+    }
 }
