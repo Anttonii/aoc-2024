@@ -4,3 +4,4 @@ final.txt
 *.exe
 
 src/day-*/*.txt
+*.ps1
