@@ -1,5 +1,6 @@
 {
     "files.associations": {
+        "*.dbclient-js": "javascript",
         "ostream": "cpp",
         "iosfwd": "cpp",
         "string": "cpp",
@@ -58,6 +59,9 @@
         "unordered_map": "cpp",
         "xhash": "cpp",
         "numeric": "cpp",
-        "deque": "cpp"
+        "deque": "cpp",
+        "queue": "cpp",
+        "stack": "cpp",
+        "span": "cpp"
     }
 }
