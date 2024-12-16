@@ -128,6 +128,12 @@ namespace utils
         return ss.str();
     }
 
+    template <class T>
+    inline std::pair<T, T> add_pairs(const std::pair<T, T> &p1, const std::pair<T, T> &p2)
+    {
+        return std::pair(p1.first + p2.first, p1.second + p2.second);
+    }
+
     struct hash_pair
     {
         template <class T1, class T2>
