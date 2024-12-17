@@ -76,6 +76,8 @@ namespace utils
             else
                 std::cout << val << " ";
         }
+        if (!nls)
+            std::cout << std::endl;
     }
 
     template <typename C, typename F>
@@ -134,6 +136,18 @@ namespace utils
         return std::pair(p1.first + p2.first, p1.second + p2.second);
     }
 
+    int bit_count(long long int num)
+    {
+        if (num == 0)
+            return 0; // Edge case: MSB is 0 for 0
+        int msb = 0;
+        while (num > 1)
+        {
+            num >>= 1; // Shift right
+            msb++;
+        }
+        return msb; // Return the MSB as a power of 2
+    }
     struct hash_pair
     {
         template <class T1, class T2>
