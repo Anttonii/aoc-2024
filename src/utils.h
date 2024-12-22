@@ -67,7 +67,7 @@ namespace utils
     }
 
     template <typename A>
-    void printVec(std::vector<A> &vec, bool nls)
+    void printVec(const std::vector<A> &vec, bool nls)
     {
         for (auto val : vec)
         {

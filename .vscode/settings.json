@@ -1,5 +1,6 @@
 {
     "files.associations": {
+        "*.ndjson": "jsonl",
         "*.dbclient-js": "javascript",
         "ostream": "cpp",
         "iosfwd": "cpp",
@@ -66,6 +67,8 @@
         "array": "cpp",
         "ranges": "cpp",
         "set": "cpp",
-        "xtree": "cpp"
+        "xtree": "cpp",
+        "bitset": "cpp",
+        "functional": "cpp"
     }
 }
