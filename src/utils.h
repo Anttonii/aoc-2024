@@ -43,7 +43,7 @@ namespace utils
         return output;
     }
 
-    std::vector<std::string> splitString(std::string &toSplit, const char del)
+    std::vector<std::string> splitString(const std::string &toSplit, const char del)
     {
         std::string s;
         std::vector<std::string> res;
